@@ -3,6 +3,7 @@
 
 # environment
 .venv/
+.venv*/
 .env
 
 # git
