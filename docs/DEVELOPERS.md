@@ -87,7 +87,6 @@ We generally follow [PEP8](https://pep8-ja.readthedocs.io/ja/latest/). Additiona
 Basically, if there are no mypy or ruff warnings, you are following the coding standards. However, the following are AIchan-specific rules that **will not trigger warnings**, so please be careful:
 
 - Use `# type: ignore` when dealing with complex Union types or when mypy cannot correctly recognize types for any reason. However, you must explain the reason immediately before the line, as shown below:
-
     ```python
     # Explain the reason here
     warned_variable # type: ignore
