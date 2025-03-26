@@ -1,5 +1,11 @@
+# For `/chat` command
+chat_system: |
+  You are a helpful assistant.
+
+# For `/talk` command
 claude_system: |
   You are a helpful assistant.
 
+# For `/fixpy` command
 fixpy_system: |
   You are a helpful assistant.
