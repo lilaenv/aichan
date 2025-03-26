@@ -25,7 +25,7 @@ Below are recommended extensions for VSCode. These are also compatible with Curs
     - [Jupyter](https://github.com/Microsoft/vscode-jupyter)
     - [YAML](https://github.com/redhat-developer/vscode-yaml)
 
-For basic VSCode and cursor settings, please refer to [settings.json](https://github.com/lilaenv/comet/blob/main/.vscode/settings.json).
+For basic VSCode and cursor settings, please refer to [settings.json](https://github.com/lilaenv/aichan/blob/main/.vscode/settings.json).
 
 ### Python Setup
 
@@ -69,14 +69,14 @@ Below is a list of basic uv commands:
 Navigate to your desired directory and clone the repository. Then, you can synchronize dependencies using uv commands. If the specified Python version is not installed, please install it before synchronizing dependencies.
 
 ```
-# ------ clone repo and change dir ------
+# ----- clone repo -----
 git clone https://github.com/lilaenv/aichan.git
 cd aichan/
 
-# ------ install python (if necessary) ------
+# ----- install python (if necessary) -----
 uv python install 3.11.11
 
-# ------ sync dependencies ------
+# ----- sync dependencies -----
 uv sync
 ```
 
@@ -85,6 +85,15 @@ uv sync
 We generally follow [PEP8](https://pep8-ja.readthedocs.io/ja/latest/). Additionally, we use mypy and ruff to improve code quality and prevent bugs.
 
 Basically, if there are no mypy or ruff warnings, you are following the coding standards. However, the following are AIchan-specific rules that **will not trigger warnings**, so please be careful:
+
+- Use `# type: ignore` when dealing with complex Union types or when mypy cannot correctly recognize types for any reason. However, you must explain the reason immediately before the line, as shown below:
+
+    ```python
+    # Explain the reason here
+    warned_variable # type: ignore
+    ```
+
+- When you need to ignore ruff rules for a valid reason, use `# noqa: <rule>`. As with mypy, you must explain the reason immediately before the line.
 
 - In specific contexts, wildcard imports are allowed (ignore F403). However, when using wildcard imports or functions defined by them, you must explain the reason immediately before the import.
 
@@ -99,8 +108,7 @@ Basically, if there are no mypy or ruff warnings, you are following the coding s
 
     The following exceptions do not require explanation:
 
-    Exception:
-    - `from path.to.utils.decorator import *`
+    - `from path.to.utils.decorators import *`
     - Imports of `commands` and `events` in `__main__.py`
 
 **Note**
