@@ -1,7 +1,7 @@
 # AIchan
 
-![Supported Python Versions](https://img.shields.io/badge/-Python%203.11|3.12-blue.svg?logo=python&logoColor=white&style=flat)
-[![License: BSD-3-Clause](https://img.shields.io/badge/-License%20BSD--3--Clause-orange.svg?style=flat)](https://github.com/lilaenv/comet/blob/main/LICENSE)
+![Python](https://img.shields.io/badge/Python-3.11|3.12-blue.svg?logo=python&logoColor=white&style=flat&labelColor=24292e)
+[![License](https://img.shields.io/badge/License-BSD--3--Clause-orange.svg?style=flat&labelColor=24292e)](https://github.com/lilaenv/comet/blob/main/LICENSE)
 [![CodeQL](https://github.com/lilaenv/aichan/actions/workflows/codeql.yml/badge.svg)](https://github.com/lilaenv/aichan/actions/workflows/codeql.yml)
 
 **AIchan** is an AI-powered Discord bot that leverages advanced natural language processing capabilities to enable interactive communication with users.
