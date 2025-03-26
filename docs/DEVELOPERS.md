@@ -25,7 +25,7 @@ Below are recommended extensions for VSCode. These are also compatible with Curs
     - [Jupyter](https://github.com/Microsoft/vscode-jupyter)
     - [YAML](https://github.com/redhat-developer/vscode-yaml)
 
-For basic VSCode and cursor settings, please refer to [settings.json](https://github.com/lilaenv/aichan/blob/main/.vscode/settings.json).
+For basic VSCode and cursor settings, please refer to [settings.json](https://github.com/lilaenv/aichan/blob/main/.vscode/settings.json). Those who use a cursor should also refer to [.cursor](https://github.com/lilaenv/aichan/blob/main/.cursor)
 
 ### Python Setup
 
