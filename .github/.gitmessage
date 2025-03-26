@@ -1,4 +1,5 @@
-# ========== prefix ==========
+# ==================== prefix ====================
+# build    Changes to the build system or external dependencies
 # change   Modifications to existing features due to specification changes, clearly indicating "changes in specifications"
 # chore    Changes to development environment or build tools, changes that don't directly affect users
 # ci       Changes related to continuous integration
@@ -14,17 +15,16 @@
 # style    Changes to coding style or formatting (without affecting functionality)
 # test     Addition of new tests, modification or changes to existing tests
 
-# ========== format ==========
-# prefix(scope): Summary described in a single line
+# ==================== format ====================
+# <prefix>[(optional scope)]: <description>
 #
-# Detailed description (optional)
+# [optional body]
 #
-# Footer (optional)
+# [optional footer]
 
-
-# ========== format (for breaking change) ==========
-# prefix!: Don't forget the ! and describe the summary in a single line
+# ==================== format for breaking change ====================
+# <prefix>[(optional scope)]!: <description>
 #
-# Detailed description (optional)
+# [optional body]
 #
-# BREAKING CHANGE: Footer
+# BREAKING CHANGE: <description>
