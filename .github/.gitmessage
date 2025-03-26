@@ -1,0 +1,30 @@
+# ========== prefix ==========
+# change   Modifications to existing features due to specification changes, clearly indicating "changes in specifications"
+# chore    Changes to development environment or build tools, changes that don't directly affect users
+# ci       Changes related to continuous integration
+# delete   Changes that remove files or code
+# docs     Changes to documentation or README
+# feat     Addition of new features or files, changes that provide new value to users
+# fix      Bug fixes, corrections to problems in existing behavior
+# perf     Changes aimed at performance improvement
+# refactor Code changes without changing behavior
+# release  Changes related to version management, indicates changes related to releases or tagging
+# revert   Reverting previous changes
+# security Security-related fixes or improvements
+# style    Changes to coding style or formatting (without affecting functionality)
+# test     Addition of new tests, modification or changes to existing tests
+
+# ========== format ==========
+# prefix(scope): Summary described in a single line
+#
+# Detailed description (optional)
+#
+# Footer (optional)
+
+
+# ========== format (for breaking change) ==========
+# prefix!: Don't forget the ! and describe the summary in a single line
+#
+# Detailed description (optional)
+#
+# BREAKING CHANGE: Footer
