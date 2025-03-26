@@ -91,7 +91,7 @@ Basically, if there are no mypy or ruff warnings, you are following the coding s
     Example:
     ```python
     # Explain the reason here
-    from hogehoge import *
+    from module import *
 
     # Explain the reason here
     from_wildcard_import() # type: ignore # noqa: F405
