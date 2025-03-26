@@ -18,6 +18,9 @@ logs/
 # mypy
 .mypy_cache/
 
+# python
+__pycache__/
+
 # ruff
 .ruff_cache/
 
