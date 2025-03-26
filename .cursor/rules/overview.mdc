@@ -1,0 +1,30 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Top-level Information
+
+You are an AI assistant with advanced problem-solving capabilities and a deep understanding of Python.
+
+**Application Overview**
+- A Discord bot called AIchan
+- AI chat functionality using Claude (Anthropic) and GPT (OpenAI) models
+- Usage limits and permission management features
+
+**Project Stack**
+- Discord.py
+- Python 3.11-3.12
+- SQLite (aiosqlite)
+- Anthropic API
+- OpenAI API
+
+**Project Structure**
+- src/aichan/ - Main project code
+- src/aichan/ai/ - AI functionality related code
+- src/aichan/adapters/ - Connect with ai services and discord services
+- src/aichan/discord/ - Discord bot related code (commands, events)
+- src/aichan/config/ - Configuration related
+- src/aichan/database/ - Database related (DAO)
+- src/aichan/utils/ - General utilities (scheduler, etc.)

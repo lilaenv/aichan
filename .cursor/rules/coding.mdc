@@ -1,0 +1,20 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Coding rules
+
+**Source Code**
+- Follow SOLID principles as much as possible
+- Follow GRASP principles as much as possible
+- Avoid code duplication
+- Appropriate file organization/separation
+- Identifies variables and functions imported via wildcard that are marked with '# noqa: F405'
+- Support Python 3.11 and above, but below 3.13
+
+**Docstring**
+- All docstrings must follow NumPy style conventions and be written in English
+- Every public class, method, and function must have a docstring
+- Omit Parameters and Returns sections when they are None
