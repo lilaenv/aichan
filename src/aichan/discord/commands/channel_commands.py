@@ -133,7 +133,7 @@ async def remove_channel_command(
 # mypy(name-defined): defined in a wildcard import
 @is_authorized_server()  # type: ignore # noqa: F405
 # mypy(name-defined): defined in a wildcard import
-@is_admin_user()  # type: ignore # noqa: F405
+@is_not_blocked_user()  # type: ignore # noqa: F405
 async def list_channels_command(
     interaction: Interaction,
 ) -> None:
