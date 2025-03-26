@@ -174,7 +174,7 @@ Manage user access permissions by granting or disabling access types in the data
     </tr>
     <tr>
         <td><code>/talk</code></td>
-        <td>Chat with AIchan in message channel</td>
+        <td>Create thread and start chat with AIchan</td>
         <td>Not Blocked</td>
         <td>Enabled</td>
         <td>Implemented</td>
