@@ -1,0 +1,25 @@
+# database
+*.db
+
+# environment
+.venv/
+.env
+
+# git
+.git
+
+# logs
+logs/
+*.log
+
+# macOS-specific files
+.DS_Store
+
+# mypy
+.mypy_cache/
+
+# ruff
+.ruff_cache/
+
+# yaml
+.prompt.yml
