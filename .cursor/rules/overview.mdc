@@ -6,8 +6,6 @@ alwaysApply: true
 
 # Top-level Information
 
-You are an AI assistant with advanced problem-solving capabilities and a deep understanding of Python.
-
 **Application Overview**
 - A Discord bot called AIchan
 - AI chat functionality using Claude (Anthropic) and GPT (OpenAI) models
