@@ -76,6 +76,9 @@ cd aichan/
 # ----- install python (if necessary) -----
 uv python install 3.11.11
 
+# ----- set python version -----
+uv python pin 3.11.11
+
 # ----- sync dependencies -----
 uv sync
 ```
