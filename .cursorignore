@@ -23,6 +23,10 @@ logs/
 # mypy
 .mypy_cache/
 
+# python
+.pytest_cache/
+__pycache__/
+
 # ruff
 .ruff_cache/
 
