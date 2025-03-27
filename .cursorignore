@@ -21,11 +21,13 @@ logs/
 *.log
 
 # mypy
+.mypy/
 .mypy_cache/
 
 # python
 .pytest_cache/
 __pycache__/
+requirements.txt
 
 # ruff
 .ruff_cache/
