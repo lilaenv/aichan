@@ -47,7 +47,7 @@ system_prompt_dict: dict[int, str] = {}
 @is_allowed_channel()  # type: ignore # noqa: F405
 # mypy(name-defined): defined in a wildcard import
 @has_daily_usage_left()  # type: ignore # noqa: F405
-async def chat_command(
+async def talk_command(
     interaction: Interaction,
     prompt: str,
     model: app_commands.Choice[int],
@@ -123,7 +123,7 @@ async def chat_command(
             response = await generate_anthropic_response(
                 system_prompt=CLAUDE_SYSTEM,
                 prompt=messages,
-                model_params=model_params.get_model_params(thread.id),
+                model_params=model_params.get_model_params(thread.id),  # type: ignore
             )
 
         # Increment the usage count for the user

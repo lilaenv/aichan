@@ -32,7 +32,9 @@ async def generate_anthropic_response(
         result = client.messages.create(
             # mypy(arg-type): expected "Iterable[MessageParam]"
             messages=convo,  # type: ignore
-            model=model_params.model,
+            # mypy(arg-type): expected ModelParam
+            # but I specified it as app_commands.Choice[int] | str
+            model=model_params.model,  # type: ignore
             max_tokens=model_params.max_tokens,
             system=system_prompt,
             temperature=model_params.temperature,

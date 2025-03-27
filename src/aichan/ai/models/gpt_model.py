@@ -26,12 +26,22 @@ class GptModelParams(ModelParamsBase):
         between 0.0 and 1.0.
     """
 
-    @ModelParamsBase.model.setter
+    @property
+    def model(self) -> app_commands.Choice[int] | str:
+        """Get the model parameter."""
+        return self._model
+
+    @model.setter
     def model(self, value: app_commands.Choice[int] | str) -> None:
         """Set and validate model."""
         self._model = value
 
-    @ModelParamsBase.max_tokens.setter
+    @property
+    def max_tokens(self) -> int:
+        """Get the max_tokens parameter."""
+        return self._max_tokens
+
+    @max_tokens.setter
     def max_tokens(self, value: int) -> None:
         """Set and validate max_tokens."""
         # GPT's max_tokens must be between 1 and 16384
@@ -40,7 +50,12 @@ class GptModelParams(ModelParamsBase):
             raise ValueError(msg)
         self._max_tokens = value
 
-    @ModelParamsBase.temperature.setter
+    @property
+    def temperature(self) -> float:
+        """Get the temperature parameter."""
+        return self._temperature
+
+    @temperature.setter
     def temperature(self, value: float) -> None:
         """Set and validate temperature."""
         # GPT's temperature must be between 0.0 and 2.0
@@ -49,7 +64,12 @@ class GptModelParams(ModelParamsBase):
             raise ValueError(msg)
         self._temperature = value
 
-    @ModelParamsBase.top_p.setter
+    @property
+    def top_p(self) -> float:
+        """Get the top_p parameter."""
+        return self._top_p
+
+    @top_p.setter
     def top_p(self, value: float) -> None:
         """Set and validate top_p."""
         # GPT's top_p must be between 0.0 and 1.0

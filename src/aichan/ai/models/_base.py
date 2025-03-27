@@ -39,78 +39,49 @@ class ModelParamsBase(ABC):
         self.temperature = temperature
         self.top_p = top_p
 
+    # 子クラスでプロパティをオーバーライドするための抽象メソッド定義
+    # Abstract method definitions for property overrides in child classes
     @property
+    @abstractmethod
     def model(self) -> app_commands.Choice[int] | str:
-        # mypy(no-any-return): the return type of the property is clearly an int
-        # mypy(attr-defined): the subclass setter will be called first,
-        # ensuring that _model is always defined before it's accessed.
-        return self._model  # type: ignore
+        """Get the model parameter."""
+        pass
 
     @model.setter
     @abstractmethod
-    def model(self, value: app_commands.Choice[int]) -> None:
-        """Set and validate model.
-
-        Parameters
-        ----------
-        value : app_commands.Choice[int]
-            The model to use.
-
-        Raises
-        ------
-        ValueError
-            If value is not a valid model.
-        """
+    def model(self, value: app_commands.Choice[int] | str) -> None:
+        """Set and validate model."""
+        pass
 
     @property
+    @abstractmethod
     def max_tokens(self) -> int:
-        # mypy(no-any-return): the return type of the property is clearly an int
-        # mypy(attr-defined): the subclass setter will be called first,
-        # ensuring that _max_tokens is always defined before it's accessed.
-        return self._max_tokens  # type: ignore
+        """Get the max_tokens parameter."""
+        pass
 
     @max_tokens.setter
     @abstractmethod
     def max_tokens(self, value: int) -> None:
-        """Set and validate max_tokens.
-
-        Parameters
-        ----------
-        value : int
-            The maximum number of tokens to generate.
-
-        Raises
-        ------
-        ValueError
-            If value is outside the valid range for the model.
-        """
+        """Set and validate max_tokens."""
+        pass
 
     @property
+    @abstractmethod
     def temperature(self) -> float:
-        # the return type of the property is clearly an float
-        # the subclass setter will be called first,
-        # ensuring that _temperature is always defined before it's accessed.
-        return self._temperature  # type: ignore
+        """Get the temperature parameter."""
+        pass
 
     @temperature.setter
     @abstractmethod
     def temperature(self, value: float) -> None:
-        """Set and validate temperature.
-
-        Parameters
-        ----------
-        value : float
-            The sampling temperature.
-
-        Raises
-        ------
-        ValueError
-            If value is outside the valid range for the model.
-        """
+        """Set and validate temperature."""
+        pass
 
     @property
+    @abstractmethod
     def top_p(self) -> float:
-        return self._top_p
+        """Get the top_p parameter."""
+        pass
 
     @top_p.setter
     def top_p(self, value: float) -> None:

@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, Any, Self
 
 if TYPE_CHECKING:
-    from src.aichan.ai.models.claude_model import ClaudeParams
+    from src.aichan.ai.models.claude_model import ClaudeModelParams
 
 
 class ModelParamsStore:
@@ -32,14 +32,14 @@ class ModelParamsStore:
             cls._instance.data = {}
         return cls._instance
 
-    def set_model_params(self, key: int, config: ClaudeParams) -> None:
+    def set_model_params(self, key: int, config: ClaudeModelParams) -> None:
         """Store model parameters under the specified key.
 
         Parameters
         ----------
         key : int
             The unique identifier for the model parameters.
-        config : ClaudeParams
+        config : ClaudeModelParams
             The configuration parameters to store.
         """
         self.data[key] = config

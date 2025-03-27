@@ -102,6 +102,7 @@ async def _is_valid_message(discord_msg: DiscordMessage) -> bool:
         discord_msg.author == client.user
         or discord_msg.author.id in blocked_user_ids
         or not isinstance(discord_msg.channel, Thread)
+        or client.user is None
         or discord_msg.channel.owner_id != client.user.id
         or discord_msg.channel.archived
         or discord_msg.channel.locked

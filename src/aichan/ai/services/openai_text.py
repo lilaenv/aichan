@@ -40,7 +40,9 @@ async def generate_openai_response(
         completion = client.chat.completions.create(
             # mypy(arg-type): expected loooooooooooooooooooooooong type
             messages=full_prompt,  # type: ignore
-            model=model_params.model,
+            # mypy(arg-type): expected ChatModel | str
+            # but I specified it as app_commands.Choice[int] | str
+            model=model_params.model,  # type: ignore
             max_tokens=model_params.max_tokens,
             temperature=model_params.temperature,
             top_p=model_params.top_p,
