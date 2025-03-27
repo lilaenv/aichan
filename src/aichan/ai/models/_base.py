@@ -45,43 +45,36 @@ class ModelParamsBase(ABC):
     @abstractmethod
     def model(self) -> app_commands.Choice[int] | str:
         """Get the model parameter."""
-        pass
 
     @model.setter
     @abstractmethod
     def model(self, value: app_commands.Choice[int] | str) -> None:
         """Set and validate model."""
-        pass
 
     @property
     @abstractmethod
     def max_tokens(self) -> int:
         """Get the max_tokens parameter."""
-        pass
 
     @max_tokens.setter
     @abstractmethod
     def max_tokens(self, value: int) -> None:
         """Set and validate max_tokens."""
-        pass
 
     @property
     @abstractmethod
     def temperature(self) -> float:
         """Get the temperature parameter."""
-        pass
 
     @temperature.setter
     @abstractmethod
     def temperature(self, value: float) -> None:
         """Set and validate temperature."""
-        pass
 
     @property
     @abstractmethod
     def top_p(self) -> float:
         """Get the top_p parameter."""
-        pass
 
     @top_p.setter
     def top_p(self, value: float) -> None:
