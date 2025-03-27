@@ -3,7 +3,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, Any, Self
 
 if TYPE_CHECKING:
-    from aichan.ai.models.claude_model import ClaudeParams
+    from src.aichan.ai.models.claude_model import ClaudeParams
 
 
 class ModelParamsStore:
