@@ -100,21 +100,21 @@ Manage user access permissions by granting or disabling access types in the data
         <td><code>/grant_access</code></td>
         <td>Grant a access type to a user</td>
         <td>Admin</td>
-        <td>Unlimited</td>
+        <td>-</td>
         <td>Implemented</td>
     </tr>
     <tr>
         <td><code>/ck_access</code></td>
         <td>Check the user's access type</td>
         <td>Admin</td>
-        <td>Unlimited</td>
+        <td>-</td>
         <td>Implemented</td>
     </tr>
     <tr>
         <td><code>/disable_access</code></td>
         <td>Disable a user's access type</td>
         <td>Admin</td>
-        <td>Unlimited</td>
+        <td>-</td>
         <td>Implemented</td>
     </tr>
 </table>
@@ -133,21 +133,21 @@ Manage user access permissions by granting or disabling access types in the data
         <td><code>/add_ch</code></td>
         <td>Add a specific channel to the allowed command channels</td>
         <td>Admin</td>
-        <td>Unlimited</td>
+        <td>-</td>
         <td>Implemented</td>
     </tr>
     <tr>
         <td><code>/ls_ch</code></td>
         <td>List channels where commands can be executed</td>
         <td>Not Blocked</td>
-        <td>Unlimited</td>
+        <td>-</td>
         <td>Implemented</td>
     </tr>
     <tr>
         <td><code>/rm_ch</code></td>
         <td>Remove a specific channel from the allowed command channels</td>
         <td>Admin</td>
-        <td>Unlimited</td>
+        <td>-</td>
         <td>Implemented</td>
     </tr>
 </table>
@@ -173,7 +173,7 @@ Manage user access permissions by granting or disabling access types in the data
         <td><code>/fixpy</code></td>
         <td>Detect and fix bugs and errors in Python code</td>
         <td>Not Blocked</td>
-        <td>Unlimited</td>
+        <td>-</td>
         <td>Implemented</td>
     </tr>
     <tr>
@@ -199,14 +199,14 @@ Manage user access permissions by granting or disabling access types in the data
         <td><code>/ck_limit</code></td>
         <td>Check your current command usage count</td>
         <td>Not Blocked</td>
-        <td>Unlimited</td>
+        <td>-</td>
         <td>Implemented</td>
     </tr>
     <tr>
         <td><code>/limit</code></td>
         <td>Set daily usage limits for restricted commands</td>
         <td>Admin</td>
-        <td>Unlimited</td>
+        <td>-</td>
         <td>Implemented</td>
     </tr>
 </table>
@@ -225,14 +225,14 @@ Manage user access permissions by granting or disabling access types in the data
         <td><code>/help</code></td>
         <td>Displays the list of available commands</td>
         <td>All users</td>
-        <td>Unlimited</td>
+        <td>-</td>
         <td>Planned</td>
     </tr>
     <tr>
         <td><code>/info</code></td>
         <td>Shows information about the application</td>
         <td>All users</td>
-        <td>Unlimited</td>
+        <td>-</td>
         <td>Planned</td>
     </tr>
 </table>
