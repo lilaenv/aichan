@@ -17,6 +17,7 @@ logs/
 .DS_Store
 
 # mypy
+.mypy/
 .mypy_cache/
 
 # python
