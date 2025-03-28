@@ -7,12 +7,48 @@ alwaysApply: true
 # Coding rules
 
 **Source Code**
-- Follow SOLID principles as much as possible
-- Follow GRASP principles as much as possible
 - Avoid code duplication
 - Appropriate file organization/separation
 - Identifies variables and functions imported via wildcard that are marked with '# noqa: F405'
 - Support Python 3.11 and above, but below 3.13
+- Follow SOLID principles and GRASP principales as much as possible
+
+SOLID:
+- single-responsibility orinciple
+  - There should never be more than one reason for a class to change
+- open/closed principle
+  - software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+- Liskov substitution principle
+  - Functions that use pointers or references to base classes must be able to use objects of derived classes without knowing it.
+- interface segregation psinciple
+  - Many client-specific interfaces are better than one general-purpose interface.
+- dependency inversion principle
+  - High-level modules should not import anything from low-level modules. Both should depend on abstractions (e.g., interfaces), [not] concretions.
+
+GRASP:
+- Information Expert
+  - If a class possesses all the information required to fulfill a responsibility, that responsibility should be assigned to the class.
+- High Cohesion
+  - Responsibilities should be appropriately concentrated within objects.
+- Low Coupling
+  - Systems should be designed to minimize dependencies between components.
+- Creator
+  - When classes A and B exist, B should create A if one or more of the following conditions are met. In this case, B becomes the creator of A:
+    - B contains A.
+    - B aggregates A (has-a relationship).
+    - B holds initialization information for A.
+    - B records instances of A.
+    - B frequently uses A.
+- Controller
+  - A controller covering a specific system should handle all input events occurring within that system.
+- Indirection
+  - Placing an intermediary object between two classes promotes reduced coupling between them.
+- Polymorphism
+  - Implement variable aspects of classes as abstract methods to enable polymorphism, with concrete implementations in subclasses.
+- Protected Variations
+  - Protect against variations by encapsulating unstable parts behind a unified interface. When changes occur, add to the interface rather than modifying it.
+- Pure Fabrication
+  - Create artificial classes (abstract classes) to balance cohesion and coupling.
 
 **Docstring**
 - All docstrings must follow NumPy style conventions and be written in English
